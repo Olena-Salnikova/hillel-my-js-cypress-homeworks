@@ -1,0 +1,24 @@
+{
+  "name": "hillel-my-js-cypress-homeworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "test": "npx cypress run",
+    "test:cloud": "npx cypress run --record --key 6a8b8b2e-1f3f-4e2f-85e3-5f3d1f5e6c7d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olena-Salnikova/hillel-my-js-cypress-homeworks.git"
+  },
+  "author": "Olena Salnikova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olena-Salnikova/hillel-my-js-cypress-homeworks/issues"
+  },
+  "homepage": "https://github.com/Olena-Salnikova/hillel-my-js-cypress-homeworks#readme",
+  "devDependencies": {
+    "cypress": "^15.6.0"
+  }
+}
