@@ -1,0 +1,121 @@
+[
+    {   "title": "First name: Registration with valid data - minimal characters",
+        "input": [
+        {
+            "text": "Li",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Ziing",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupRepeatPassword"
+        }]
+    },
+
+    {   "title": "First name: Registration with valid data - maximum characters",
+        "input": [
+        {
+            "text": "Lqwertyuiasdfghjklzx",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Ziing",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupRepeatPassword"
+        }]
+    },
+
+    {   "title": "Last name: Registration with valid data - minimal characters",
+        "input": [
+        {
+            "text": "Li",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Zi",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupRepeatPassword"
+        }] 
+    },
+
+    {   "title": "Last name: Registration with valid data - maximum characters",
+        "input": [
+        {
+            "text": "Li",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Zqwertyuiasdfghjklzx",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "ZX!234sdfdfhfg",
+            "selector": "#signupRepeatPassword"
+        }]
+    },
+
+    {   "title": "Password: Registration with valid data - minimal characters",
+        "input": [
+        {
+            "text": "Li",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Ziing",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "1SDfdfhf",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "1SDfdfhf",
+            "selector": "#signupRepeatPassword"
+        }] 
+    },
+    
+    {   "title": "Password: Registration with valid data - maximum characters",
+        "input": [
+        {
+            "text": "Li",
+            "selector": "#signupName"
+        },
+        {
+            "text": "Ziing",
+            "selector": "#signupLastName"
+        },
+        {
+            "text": "1SDfdfhfsdfsthd",
+            "selector": "#signupPassword"
+        },
+        {
+            "text": "1SDfdfhfsdfsthd",
+            "selector": "#signupRepeatPassword"
+        }]
+    }
+]
