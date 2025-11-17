@@ -1,0 +1,261 @@
+[
+  { "title": "First name: Empty field",
+    "selector": "#signupName",
+    "input": {
+      "text": ""
+    },
+    "expected": {
+      "message": "Name required"
+    }
+  },
+
+  { "title": "First name: Non English characters",
+    "selector": "#signupName",
+    "input": {
+      "text": "Василь"
+    },
+    "expected": {
+      "message": "Name is invalid"
+    }
+  },
+
+    { "title": "First name: Wrong length (1 character)",
+    "selector": "#signupName",
+    "input": {
+      "text": "A"
+    },
+    "expected": {
+      "message": "Name has to be from 2 to 20 characters long"
+    }
+  },
+
+    { "title": "First name: Wrong length (21 characters)",
+    "selector": "#signupName",
+    "input": {
+      "text": "Alexanderthegreatesta"
+    },
+    "expected": {
+      "message": "Name has to be from 2 to 20 characters long"
+    }
+  },
+
+  { "title": "First name: Leading and trailing spaces",
+    "selector": "#signupName",
+    "input": {
+      "text": "  John  "
+    },
+    "expected": {
+      "message": "Name is invalid"
+    }
+  },
+
+    { "title": "Last name: Empty field",
+    "selector": "#signupLastName",
+    "input": {
+      "text": ""
+    },
+    "expected": {
+      "message": "Last name required"
+    }
+  },
+
+  { "title": "Last name: Non English characters",
+    "selector": "#signupLastName",
+    "input": {
+      "text": "Щербак"
+    },
+    "expected": {
+      "message": "Last name is invalid"
+    }
+  },
+
+    { "title": "Last name: Wrong length (1 character)",
+    "selector": "#signupLastName",
+    "input": {
+      "text": "A"
+    },
+    "expected": {
+      "message": "Last name has to be from 2 to 20 characters long"
+    }
+  },
+
+    { "title": "Last name: Wrong length (21 characters)",
+    "selector": "#signupLastName",
+    "input": {
+      "text": "Alexanderthegreatesta"
+    },
+    "expected": {
+      "message": "Last name has to be from 2 to 20 characters long"
+    }
+  },
+
+  { "title": "Last name: Leading and trailing spaces",
+    "selector": "#signupLastName",
+    "input": {
+      "text": "  Smith  "
+    },
+    "expected": {
+      "message": "Last name is invalid"
+    }
+  },
+
+    { "title": "Email: Empty field",
+    "selector": "#signupEmail",
+    "input": {
+      "text": ""
+    },
+    "expected": {
+      "message": "Email required"
+    }
+  },
+
+  { "title": "Email: Missing @ symbol",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "testemail.com"
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+    { "title": "Email: Missing domain name",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "test@.com"
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+    { "title": "Email: Missing top-level domain .com",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "testemail@domain"
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+  { "title": "Email: Missing username",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "@example.com"
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+  { "title": "Email: With special symbols",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "!#user@examplecom"
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+  { "title": "Email: Leading and trailing spaces",
+    "selector": "#signupEmail",
+    "input": {
+      "text": "  user@example.com  "
+    },
+    "expected": {
+      "message": "Email is incorrect"
+    }
+  },
+
+    { "title": "Password: Empty field",
+    "selector": "#signupPassword",
+    "input": {
+      "text": ""
+    },
+    "expected": {
+      "message": "Password required"
+    }
+  },
+
+  { "title": "Password: Wrong length (7 characters)",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "1SDfdfh"
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+    { "title": "Password: Wrong length (16 character)",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "1SDfdfhfsdfsthdq"
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+    { "title": "Password: Without integer",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "SDfdfhfs"
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+  { "title": "Password: Without capital letter",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "1asfdfhf"
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+    { "title": "Password: Without small letter",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "1ASDFDFH"
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+    { "title": "Password: Leading and trailing spaces",
+    "selector": "#signupPassword",
+    "input": {
+      "text": "  ZX!234sdfdf  "
+    },
+    "expected": {
+      "message": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+    }
+  },
+
+    { "title": "Re-enter password: Empty field",
+    "selector": "#signupRepeatPassword",
+    "input": {
+      "text": ""
+    },
+    "expected": {
+      "message": "Re-enter password required"
+    }  
+  },
+  
+    { "title": "Re-enter password: Mismatched passwords",
+    "selector": "#signupRepeatPassword",
+    "input": {
+      "text": "ZX!234sdfdfhfg1"
+    },
+    "expected": {
+      "message": "Passwords do not match"
+    }
+  }
+]
