@@ -27,8 +27,8 @@ Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
     return originalFn(url, {
         ...options,
         auth: {
-            username: "guest",
-            password: "welcome2qauto",
+            username: Cypress.env("BASIC_AUTH_USERNAME"),
+            password: Cypress.env("BASIC_AUTH_PASSWORD"),
         },
     });
 })

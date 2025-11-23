@@ -18,8 +18,7 @@ module.exports = defineConfig({
   },
   defaultCommandTimeout: 8000,
   e2e: {
-    //baseUrl: Cypress.env("BASE_URL"),
-    baseUrl: "https://qauto.forstudy.space/",
+    baseUrl: "https://qauto2.forstudy.space",
     watchForFileChanges: false,
     specPattern: "cypress/e2e/**/*.{spec,test}.{js,jsx,ts,tsx}",
     experimentalRunAllSpecs: true,

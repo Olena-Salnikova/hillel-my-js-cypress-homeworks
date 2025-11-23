@@ -6,7 +6,12 @@
   "scripts": {
     "open": "npx cypress open",
     "test": "npx cypress run",
-    "test:cloud": "npx cypress run --record --key 6a8b8b2e-1f3f-4e2f-85e3-5f3d1f5e6c7d"
+    "test:cloud": "npx cypress run --record --key 6a8b8b2e-1f3f-4e2f-85e3-5f3d1f5e6c7d",
+    "merge-reports": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "generate-report": "npx marge mochawesome.json",
+    "report": "npm run merge-reports && npm run generate-report",
+    "test-env-qauto": "npx cypress open  --config-file cypress.qauto.config.js",
+    "test-env-qauto2": "npx cypress open  --config-file cypress.qauto2.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,9 @@
   "homepage": "https://github.com/Olena-Salnikova/hillel-my-js-cypress-homeworks#readme",
   "devDependencies": {
     "@faker-js/faker": "^10.1.0",
-    "cypress": "^15.6.0"
+    "cypress": "^15.6.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
